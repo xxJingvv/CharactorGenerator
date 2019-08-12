@@ -1,0 +1,6 @@
+﻿Admin
+astrogation
+carouse
+flyer
+gun combat
+pilot
