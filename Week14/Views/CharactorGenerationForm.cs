@@ -14,5 +14,21 @@ namespace Week14.Views
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            if(MainTapControl.SelectedIndex != 0)
+            {
+                MainTapControl.SelectedIndex--;
+            }
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (MainTapControl.SelectedIndex < MainTapControl.TabPages.Count - 1)
+            {
+                MainTapControl.SelectedIndex++;
+            }
+        }
     }
 }
