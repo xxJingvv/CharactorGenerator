@@ -110,7 +110,6 @@
   <ItemGroup>
     <Content Include="Data\firstNames.txt" />
     <Content Include="Data\lastNames.txt" />
-    <Content Include="Data\Skills.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

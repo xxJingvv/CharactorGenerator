@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Week14.Objects
 {
-    class Skill
+    public class Skill
     {
         public string Name { get; set; }
         public int Level { get; set; }
