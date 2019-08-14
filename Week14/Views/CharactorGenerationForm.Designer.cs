@@ -80,6 +80,30 @@
             this.SkillDataLabel3 = new System.Windows.Forms.Label();
             this.SkillDataLabel4 = new System.Windows.Forms.Label();
             this.GenerateSkillButton = new System.Windows.Forms.Button();
+            this.CharactorLableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.CharacterFisrNameLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ChaFirstnameDataLabel = new System.Windows.Forms.Label();
+            this.ChaLastNameDataLabel = new System.Windows.Forms.Label();
+            this.ChaStrengthlabel = new System.Windows.Forms.Label();
+            this.ChaDexDataLabel = new System.Windows.Forms.Label();
+            this.ChaEndLabel = new System.Windows.Forms.Label();
+            this.ChaEcuLabel = new System.Windows.Forms.Label();
+            this.CharIntLabel = new System.Windows.Forms.Label();
+            this.ChaSSLabel = new System.Windows.Forms.Label();
+            this.ChaSkillA = new System.Windows.Forms.Label();
+            this.ChasSkillB = new System.Windows.Forms.Label();
+            this.ChaSkillCLabel = new System.Windows.Forms.Label();
+            this.CharSkillDLabel = new System.Windows.Forms.Label();
+            this.CharactorOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.CharactorSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.MainTapControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.IdentityTableLayoutPanel.SuspendLayout();
@@ -90,6 +114,7 @@
             this.MainToolStript.SuspendLayout();
             this.MainMenuStript.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.CharactorLableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTapControl
@@ -453,6 +478,7 @@
             // 
             // CharactorSheet
             // 
+            this.CharactorSheet.Controls.Add(this.CharactorLableLayoutPanel);
             this.CharactorSheet.Controls.Add(this.MainToolStript);
             this.CharactorSheet.Controls.Add(this.MainMenuStript);
             this.CharactorSheet.Location = new System.Drawing.Point(4, 33);
@@ -493,6 +519,7 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // toolStripSeparator6
             // 
@@ -512,6 +539,7 @@
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.helpToolStripButton.Text = "He&lp";
+            this.helpToolStripButton.Click += new System.EventHandler(this.helpToolStripButton_Click);
             // 
             // MainMenuStript
             // 
@@ -726,6 +754,335 @@
             this.GenerateSkillButton.UseVisualStyleBackColor = true;
             this.GenerateSkillButton.Click += new System.EventHandler(this.GenerateSkillButton_Click);
             // 
+            // CharactorLableLayoutPanel
+            // 
+            this.CharactorLableLayoutPanel.ColumnCount = 6;
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharactorLableLayoutPanel.Controls.Add(this.CharacterFisrNameLabel, 0, 0);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label2, 0, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label1, 3, 0);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label3, 0, 3);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label4, 1, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label5, 2, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label6, 3, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label7, 4, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.label8, 5, 1);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaFirstnameDataLabel, 1, 0);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaLastNameDataLabel, 4, 0);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaStrengthlabel, 0, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaDexDataLabel, 1, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaEndLabel, 2, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaEcuLabel, 3, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.CharIntLabel, 4, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaSSLabel, 5, 2);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaSkillA, 0, 4);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChasSkillB, 1, 4);
+            this.CharactorLableLayoutPanel.Controls.Add(this.ChaSkillCLabel, 2, 4);
+            this.CharactorLableLayoutPanel.Controls.Add(this.CharSkillDLabel, 3, 4);
+            this.CharactorLableLayoutPanel.Location = new System.Drawing.Point(8, 52);
+            this.CharactorLableLayoutPanel.Name = "CharactorLableLayoutPanel";
+            this.CharactorLableLayoutPanel.RowCount = 5;
+            this.CharactorLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharactorLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharactorLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharactorLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharactorLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.CharactorLableLayoutPanel.Size = new System.Drawing.Size(760, 351);
+            this.CharactorLableLayoutPanel.TabIndex = 2;
+            // 
+            // CharacterFisrNameLabel
+            // 
+            this.CharacterFisrNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterFisrNameLabel.AutoSize = true;
+            this.CharacterFisrNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharacterFisrNameLabel.Location = new System.Drawing.Point(3, 0);
+            this.CharacterFisrNameLabel.Name = "CharacterFisrNameLabel";
+            this.CharacterFisrNameLabel.Size = new System.Drawing.Size(120, 70);
+            this.CharacterFisrNameLabel.TabIndex = 0;
+            this.CharacterFisrNameLabel.Text = "First Name";
+            this.CharacterFisrNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(381, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 70);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Last Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 70);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Strength";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 210);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 70);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Skills";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(129, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 70);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Dexterity";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(255, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 70);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Endurance";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(381, 70);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 70);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Education";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(507, 70);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 70);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Inellect";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(633, 70);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 70);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Social Standing";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ChaFirstnameDataLabel
+            // 
+            this.ChaFirstnameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaFirstnameDataLabel.AutoSize = true;
+            this.ChaFirstnameDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharactorLableLayoutPanel.SetColumnSpan(this.ChaFirstnameDataLabel, 2);
+            this.ChaFirstnameDataLabel.Location = new System.Drawing.Point(129, 0);
+            this.ChaFirstnameDataLabel.Name = "ChaFirstnameDataLabel";
+            this.ChaFirstnameDataLabel.Size = new System.Drawing.Size(246, 70);
+            this.ChaFirstnameDataLabel.TabIndex = 1;
+            this.ChaFirstnameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaLastNameDataLabel
+            // 
+            this.ChaLastNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaLastNameDataLabel.AutoSize = true;
+            this.ChaLastNameDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharactorLableLayoutPanel.SetColumnSpan(this.ChaLastNameDataLabel, 2);
+            this.ChaLastNameDataLabel.Location = new System.Drawing.Point(507, 0);
+            this.ChaLastNameDataLabel.Name = "ChaLastNameDataLabel";
+            this.ChaLastNameDataLabel.Size = new System.Drawing.Size(250, 70);
+            this.ChaLastNameDataLabel.TabIndex = 1;
+            this.ChaLastNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaStrengthlabel
+            // 
+            this.ChaStrengthlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaStrengthlabel.AutoSize = true;
+            this.ChaStrengthlabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaStrengthlabel.Location = new System.Drawing.Point(3, 140);
+            this.ChaStrengthlabel.Name = "ChaStrengthlabel";
+            this.ChaStrengthlabel.Size = new System.Drawing.Size(120, 70);
+            this.ChaStrengthlabel.TabIndex = 1;
+            this.ChaStrengthlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaDexDataLabel
+            // 
+            this.ChaDexDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaDexDataLabel.AutoSize = true;
+            this.ChaDexDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaDexDataLabel.Location = new System.Drawing.Point(129, 140);
+            this.ChaDexDataLabel.Name = "ChaDexDataLabel";
+            this.ChaDexDataLabel.Size = new System.Drawing.Size(120, 70);
+            this.ChaDexDataLabel.TabIndex = 1;
+            this.ChaDexDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaEndLabel
+            // 
+            this.ChaEndLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaEndLabel.AutoSize = true;
+            this.ChaEndLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaEndLabel.Location = new System.Drawing.Point(255, 140);
+            this.ChaEndLabel.Name = "ChaEndLabel";
+            this.ChaEndLabel.Size = new System.Drawing.Size(120, 70);
+            this.ChaEndLabel.TabIndex = 1;
+            this.ChaEndLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaEcuLabel
+            // 
+            this.ChaEcuLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaEcuLabel.AutoSize = true;
+            this.ChaEcuLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaEcuLabel.Location = new System.Drawing.Point(381, 140);
+            this.ChaEcuLabel.Name = "ChaEcuLabel";
+            this.ChaEcuLabel.Size = new System.Drawing.Size(120, 70);
+            this.ChaEcuLabel.TabIndex = 1;
+            this.ChaEcuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharIntLabel
+            // 
+            this.CharIntLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharIntLabel.AutoSize = true;
+            this.CharIntLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharIntLabel.Location = new System.Drawing.Point(507, 140);
+            this.CharIntLabel.Name = "CharIntLabel";
+            this.CharIntLabel.Size = new System.Drawing.Size(120, 70);
+            this.CharIntLabel.TabIndex = 1;
+            this.CharIntLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaSSLabel
+            // 
+            this.ChaSSLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaSSLabel.AutoSize = true;
+            this.ChaSSLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaSSLabel.Location = new System.Drawing.Point(633, 140);
+            this.ChaSSLabel.Name = "ChaSSLabel";
+            this.ChaSSLabel.Size = new System.Drawing.Size(124, 70);
+            this.ChaSSLabel.TabIndex = 1;
+            this.ChaSSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaSkillA
+            // 
+            this.ChaSkillA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaSkillA.AutoSize = true;
+            this.ChaSkillA.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaSkillA.Location = new System.Drawing.Point(3, 280);
+            this.ChaSkillA.Name = "ChaSkillA";
+            this.ChaSkillA.Size = new System.Drawing.Size(120, 71);
+            this.ChaSkillA.TabIndex = 1;
+            this.ChaSkillA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChasSkillB
+            // 
+            this.ChasSkillB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChasSkillB.AutoSize = true;
+            this.ChasSkillB.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChasSkillB.Location = new System.Drawing.Point(129, 280);
+            this.ChasSkillB.Name = "ChasSkillB";
+            this.ChasSkillB.Size = new System.Drawing.Size(120, 71);
+            this.ChasSkillB.TabIndex = 1;
+            this.ChasSkillB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChaSkillCLabel
+            // 
+            this.ChaSkillCLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChaSkillCLabel.AutoSize = true;
+            this.ChaSkillCLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ChaSkillCLabel.Location = new System.Drawing.Point(255, 280);
+            this.ChaSkillCLabel.Name = "ChaSkillCLabel";
+            this.ChaSkillCLabel.Size = new System.Drawing.Size(120, 71);
+            this.ChaSkillCLabel.TabIndex = 1;
+            this.ChaSkillCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharSkillDLabel
+            // 
+            this.CharSkillDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharSkillDLabel.AutoSize = true;
+            this.CharSkillDLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharSkillDLabel.Location = new System.Drawing.Point(381, 280);
+            this.CharSkillDLabel.Name = "CharSkillDLabel";
+            this.CharSkillDLabel.Size = new System.Drawing.Size(120, 71);
+            this.CharSkillDLabel.TabIndex = 1;
+            this.CharSkillDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharactorOpenFileDialog
+            // 
+            this.CharactorOpenFileDialog.FileName = "openFileDialog1";
+            // 
             // CharactorGenerationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -753,6 +1110,8 @@
             this.MainMenuStript.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.CharactorLableLayoutPanel.ResumeLayout(false);
+            this.CharactorLableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -810,5 +1169,29 @@
         private System.Windows.Forms.Label SkillDataLabel3;
         private System.Windows.Forms.Label SkillDataLabel4;
         private System.Windows.Forms.Button GenerateSkillButton;
+        private System.Windows.Forms.TableLayoutPanel CharactorLableLayoutPanel;
+        private System.Windows.Forms.Label CharacterFisrNameLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label ChaFirstnameDataLabel;
+        private System.Windows.Forms.Label ChaLastNameDataLabel;
+        private System.Windows.Forms.Label ChaStrengthlabel;
+        private System.Windows.Forms.Label ChaDexDataLabel;
+        private System.Windows.Forms.Label ChaEndLabel;
+        private System.Windows.Forms.Label ChaEcuLabel;
+        private System.Windows.Forms.Label CharIntLabel;
+        private System.Windows.Forms.Label ChaSSLabel;
+        private System.Windows.Forms.Label ChaSkillA;
+        private System.Windows.Forms.Label ChasSkillB;
+        private System.Windows.Forms.Label ChaSkillCLabel;
+        private System.Windows.Forms.Label CharSkillDLabel;
+        private System.Windows.Forms.OpenFileDialog CharactorOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog CharactorSaveFileDialog;
     }
 }

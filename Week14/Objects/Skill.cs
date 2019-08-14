@@ -13,7 +13,9 @@ namespace Week14.Objects
 {
     public class Skill
     {
-        public string Name { get; set; }
-        public int Level { get; set; }
+        public string SkillA { get; set; }
+        public string SkillB { get; set; }
+        public string SkillC { get; set; }
+        public string SkillD { get; set; }
     }
 }

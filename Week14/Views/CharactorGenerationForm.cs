@@ -123,10 +123,38 @@ namespace Week14.Views
             SkillDataLabel2.Text = SkillList[SkillRand2];
             SkillDataLabel3.Text = SkillList[SkillRand3];
             SkillDataLabel4.Text = SkillList[SkillRand4];
+
+            Program.skill.SkillA = SkillDataLabel1.Text;
+            Program.skill.SkillB = SkillDataLabel2.Text;
+            Program.skill.SkillC = SkillDataLabel3.Text;
+            Program.skill.SkillD = SkillDataLabel4.Text;
+
         }
         private void GenerateSkillButton_Click(object sender, EventArgs e)
         {
             GenerateSkills();
+        }
+
+        private void GenerateCharactor()
+        {
+            ChaFirstnameDataLabel.Text = Program.identity.FirstName;
+            ChaLastNameDataLabel.Text = Program.identity.LastName;
+            ChaStrengthlabel.Text = Program.character.Strength;
+            ChaDexDataLabel.Text = Program.character.Dexterity;
+            ChaEndLabel.Text = Program.character.Endurance;
+            CharIntLabel.Text = Program.character.Intellect;
+            ChaEcuLabel.Text = Program.character.Education;
+            
+        }
+
+        private void helpToolStripButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
